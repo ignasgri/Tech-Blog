@@ -1,3 +1,21 @@
+body{
+  background-image: url(http://www.healthline.com/hlcmsresource/images/News/general-health/071916_unitsmoking_BODY.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color:black;
+}
+#monster{
+    opacity: 0.8;
+}
+.panel-body{
+    margin-bottom: 15px;
+}
+.panel {
+    border-color: transparent;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9)
+}
 .btn-default {
     text-shadow: 0 1px 0 gray;
     color: gray;
@@ -18,6 +36,14 @@
     /*margin-right: 50px;*/
     text-align: center;
 }
+.navbar-brand {
+    float: left;
+    padding: 11px 15px;
+    padding-right: 0;
+    font-size: 17px;
+    line-height: 18px;
+    height: 40px;
+}
 h1{
     text-align: center;
 }
@@ -34,19 +60,19 @@ footer {
 }
 
 h1, h1 a {
-    color: #555555;
+    color: white;
     text-decoration: none;
 }
  
 #masthead {
     padding-left:10px;
-    min-height: 199px;
+    padding-bottom: 30px;
+    min-height: 50px;
 }
  
 #masthead h1 {
     font-size: 55px;
     line-height: 1;
-    margin-top: 50px;
 }
  
 #masthead .well{
@@ -70,7 +96,7 @@ h1, h1 a {
 }
  
 a, a:hover {
-    color: #223344;
+    color: white;
     text-decoration: none;
 }
  
@@ -81,12 +107,6 @@ a, a:hover {
 .dropdown-menu {
     min-width: 250px;
 }
- 
-.panel {
-    border-color: transparent;
-    border-radius: 0;
-}
- 
 .thumbnail {
     margin-bottom: 8px;
 }

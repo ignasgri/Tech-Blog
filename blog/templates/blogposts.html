@@ -6,8 +6,9 @@
             <hr>
             <div class="col-md-2 col-sm-3 text-center">
                 <a class="story-img" href="#">
-                    <img src="http://placehold.it/100" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                    <img src="https://secure.gravatar.com/avatar/fab38ce5af9b9ca0b193252e0ff9879f?s=100&d=mm&r=g" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
                 </a>
+                <h6>Author: {{post.author}}</h6>
             </div>
             <div class="col-md-10 col-sm-9">
                 <h3>{{ post.title }}</h3>
@@ -17,7 +18,7 @@
                         <p><button class="btn btn-default" onclick="location.href={{ post.id }}" >Read More</button>
                         <button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button></p>
                         {{ post.published_date }} | <strong>Views</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}
-
+                            
                     </div>
                 </div>
             </div>
