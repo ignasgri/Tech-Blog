@@ -1,3 +1,9 @@
+.alert-success{
+    width: 240px;
+    margin-left: 30px;
+
+}
+
 body{
   background-image: url(http://www.healthline.com/hlcmsresource/images/News/general-health/071916_unitsmoking_BODY.jpg);
   background-size:cover;
@@ -14,7 +20,7 @@ body{
 .panel {
     border-color: transparent;
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.9)
+    background: rgba(255, 255, 255, 0.8)
 }
 .btn-default {
     text-shadow: 0 1px 0 gray;
@@ -34,7 +40,6 @@ body{
     margin-top: 20px;
     width: 100%;
     /*margin-right: 50px;*/
-    text-align: center;
 }
 .navbar-brand {
     float: left;
@@ -96,7 +101,7 @@ h1, h1 a {
 }
  
 a, a:hover {
-    color: white;
+    color: black;
     text-decoration: none;
 }
  
