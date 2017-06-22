@@ -12,10 +12,28 @@
     <script type="text/javascript" src="{% static "js/stripe.js" %}"></script>
 {% endblock %}
 
-{% block content %}
 
-    <h2><img src="https://images.images4us.com/888poker/en/1803151514icons-3_03_1427029390361.png" height="50px" atl="log"> Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="image" href="#">
+                    <img src="https://secure.gravatar.com/avatar/fab38ce5af9b9ca0b193252e0ff9879f?s=100&d=mm&r=g" style="width:125px; height: 125px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                </div>
+        </div>
+        <div class="col-md-9">
+            <h2><img src="https://images.images4us.com/888poker/en/1803151514icons-3_03_1427029390361.png" height="50px" atl="log"> Success!</h2>
+            <p>Name: {{ user.first_name }}</p>
+            <p>Surname: {{ user.last_name }}</p>
+            <p>Email: {{ user.email }} </p>
+            </br>
+            <button class="btn btn-default " onclick="location.href='{% url 'new_post' %}'">Write a new post</button></p>
+        </div>
+    </div>
+</div>
+
+
 
     <script type="text/javascript">
         function cancelSubscriptionCheck() {

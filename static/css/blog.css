@@ -1,9 +1,13 @@
 .alert-success{
     width: 240px;
     margin-left: 30px;
-
 }
-
+h5{
+    color: white;
+}
+.image{
+     text-align: center;
+  }
 body{
   background-image: url(http://www.healthline.com/hlcmsresource/images/News/general-health/071916_unitsmoking_BODY.jpg);
   background-size:cover;
@@ -54,7 +58,7 @@ h1{
 }
 .navbar-brand>img{
     display: block;
-    margin-top: -15px;
+    margin-top: -12px;
 }
 footer {
     margin-top: 40px;
