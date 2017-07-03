@@ -1,3 +1,22 @@
 .imagesize{
-    margin-bottom: 50px !important;
+    margin-bottom: 20px !important;
+    width:100%;
+}
+.blogimages{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+img.blogimages{
+    border-radius:15px;
+}
+.profileimage{
+    margin-top:40px;
+    width: 150px; 
+    height: 150px; 
+    background-color: #12ABB2; 
+    color: #ffffff;
+    border-radius:50%
 }
