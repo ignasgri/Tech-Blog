@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load gravatar %}
  
 {% block content %}
     {% for post in posts %}
@@ -6,7 +7,7 @@
             <hr>
             <div class="col-md-2 col-sm-3 text-center">
                 <a class="story-img" href="#">
-                    <img src="https://secure.gravatar.com/avatar/fab38ce5af9b9ca0b193252e0ff9879f?s=100&d=mm&r=g" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                    <img src="{% gravatar_url post.author.email %}" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
                 </a>
                 <h6>Author: {{post.author}}</h6>
             </div>

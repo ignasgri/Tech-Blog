@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load gravatar %}
 {% load bootstrap_tags %}
 {% load staticfiles %}
 
@@ -19,9 +20,9 @@
     <div class="row">
         <div class="col-md-3">
             <div class="image" href="#">
-                    <img src="https://secure.gravatar.com/avatar/fab38ce5af9b9ca0b193252e0ff9879f?s=100&d=mm&r=g" style="width:125px; height: 125px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
-                </div>
-        </div>
+            <img src="{% gravatar_url user.email %}" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">                
+            </div>
+            </div>
         <div class="col-md-9">
             <h2><img src="https://images.images4us.com/888poker/en/1803151514icons-3_03_1427029390361.png" height="50px" atl="log"> Success!</h2>
             <p>Name: {{ user.first_name }}</p>
