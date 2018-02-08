@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-# import os
+import os
 import dj_database_url
-from .env import *
+# from .env import *
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'blog_prj.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -95,10 +95,10 @@ WSGI_APPLICATION = 'blog_prj.wsgi.application'
 # }
 
 # DATABASE_URL = os.environ.get('DATABASE_URL')
-# DATABASE_URL = 'postgres://dzbmpemarbnftb:2049a6e14b0d78c25e7f0892dd1970f1707c9cc6adc1aa130010c710e29e7606@ec2-54-217-212-8.eu-west-1.compute.amazonaws.com:5432/dbcrj3eks40gh0'
+DATABASE_URL = 'postgres://dzbmpemarbnftb:2049a6e14b0d78c25e7f0892dd1970f1707c9cc6adc1aa130010c710e29e7606@ec2-54-217-212-8.eu-west-1.compute.amazonaws.com:5432/dbcrj3eks40gh0'
 # DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
 # DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
-DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
