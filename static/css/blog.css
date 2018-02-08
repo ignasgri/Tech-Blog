@@ -11,16 +11,37 @@ body{
   background-attachment:fixed;
   color:black;
 }
+form{
+    padding: 20px;
+}
+hr{
+    width: 90%!important;
+}
 #monster{
     opacity: 0.8;
 }
+#disqus_thread{
+    padding: 0px 20px 0px 20px!important;
+}
 .panel-body{
     margin-bottom: 15px;
+    padding: 30px
 }
 .panel {
     border-color: transparent;
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.8)
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin: auto;
+}
+.blog-panel {
+    border-color: transparent;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+.extra-panel{
+    background-color: transparent;
 }
 .btn-default {
     text-shadow: 0 1px 0 gray;
@@ -28,6 +49,8 @@ body{
     border-color: #ccc;
     /* color: red; */
     background: #f9c64d;
+    padding: 10px!important;
+}
 }
 .btn-default:hover {
     text-shadow: 0 1px 0 gray;
@@ -60,7 +83,7 @@ footer {
     margin-top: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #ededed;
+    /* background-color: #ededed; */
     text-align: center;
 }
 
@@ -73,11 +96,14 @@ h1, h1 a {
     padding-left:10px;
     padding-bottom: 30px;
     min-height: 50px;
+    margin: auto;
+}
 }
  
 #masthead h1 {
     font-size: 55px;
     line-height: 1;
+    margin: auto;
 }
  
 #masthead .well{
@@ -148,10 +174,22 @@ a, a:hover {
     padding: 6px;
     color: #fff;
 }
+.blog-posts{
+    padding-bottom: 20px;
+}
+.new{
+    text-shadow: 0 1px 0 grey;
+    color: #f9c64d;
+    border-color: #ccc;
+    /* color: red; */
+    background: gray;
+}
+}
 
 @media screen and (min-width: 768px) {
     #masthead h1 {
         font-size: 80px;
+        margin: auto;
 }
 }
 @media screen and (max-width: 768px) {

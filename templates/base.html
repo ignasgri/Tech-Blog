@@ -4,8 +4,8 @@
 <head>
     <title>Stack - BootCamp Blog</title>
     <link rel="stylesheet" href="{% static "css/customize.css" %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+    {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> {% endcomment %}
+    <link rel="stylesheet" href="https://bootswatch.com/3/simplex/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
 </head>
 <body>
@@ -42,7 +42,7 @@
 
      <form class="navbar-form navbar-right">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="for display purposes only">
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
@@ -101,26 +101,26 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="panel">
-                <div class="panel-body">
+            
+                {% comment %} <div class="panel-body"> {% endcomment %}
                     <!--blog entries-->
                     {% block content %}
                     {% endblock %}
                     <!--blog entries-->
-                </div>
-            </div>
+                {% comment %} </div> {% endcomment %}
+            
         </div>
     </div>
 </div>
 <footer>
     <div class="container">
         <div>
-        <h4><img src="http://www.lockheedmartin.co.uk/content/dam/lockheed/data/corporate/photo/ethics/phone-icon.png" alt="monster" height=40px>Support lines are open 8am - 6pm Monday to Friday for Republic of Ireland and United Kingdom customers</h4>
         </div>
         </div>
 </footer>
 <!-- script references -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -3,6 +3,8 @@
 
  
 {% block content %}
+<div class="blog-panel">
+
         <div class="row">
             <div class="col-md-2 col-sm-3 text-center">
                 <a class="story-img" href="#">
@@ -12,7 +14,7 @@
             </div>
             
             <div class="col-md-10 col-sm-9">
-                <h2><i>{{ post.title }}</i></h2>
+                <h2><i class="post-title">{{ post.title }}</i></h2>
                 <div class="row">
                     <div class="col-xs-12 col-sl-12 col-md-11 col-lg-9">
                          {% if post.image %}
@@ -20,7 +22,8 @@
                             {% endif %}
                           <p>{{ post.content|linebreaks }}</p>
                           <p><button class="btn btn-default" onclick="location.href='{% url 'post_list'%}'">Back to Blog</button> 
-                          <button class="btn btn-default" onclick="location.href='{% url 'edit' post.id %}'">Edit</button></p>
+                          <button class="btn btn-default" onclick="location.href='{% url 'edit' post.id %}'">Edit</button>
+                          <a href="/"><button class="btn btn-default"><a href="/">back</button></a></p>                          
                           <p>{{ post.published_date }}</p>
                          {% load disqus_tags %}
                          {% set_disqus_title post.title %}
@@ -29,4 +32,7 @@
                 </div>
             </div>
         </div>
+ 
+        
+    </div>
 {% endblock %}
