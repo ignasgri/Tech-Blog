@@ -23,9 +23,11 @@ hr{
 #disqus_thread{
     padding: 0px 20px 0px 20px!important;
 }
+
 .panel-body{
     margin-bottom: 15px;
-    padding: 30px
+    padding: 30px;
+    padding: 30px;
 }
 .panel {
     border-color: transparent;
