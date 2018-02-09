@@ -24,6 +24,7 @@
                           <p><button class="btn btn-default" onclick="location.href='{% url 'post_list'%}'">Back to Blog</button> 
                             {% if user.id == post.author_id %}
                           <button class="btn btn-default" onclick="location.href='{% url 'edit' post.id %}'">Edit</button>
+                          {% endif %}
                           <a href="/"><button class="btn btn-default"><a href="/">back</button></a></p>                          
                           <p>{{ post.published_date }}</p>
                          {% load disqus_tags %}

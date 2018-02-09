@@ -13,6 +13,8 @@
 }
 img.blogimages{
     border-radius:15px;
+    margin: auto;
+    display: block;
 }
 .profileimage{
     margin-top:40px;

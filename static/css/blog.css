@@ -186,12 +186,15 @@ a, a:hover {
     /* color: red; */
     background: gray;
 }
-}
 
 @media screen and (min-width: 768px) {
     #masthead h1 {
         font-size: 80px;
         margin: auto;
+}
+img.blogimages{
+    border-radius:15px;
+    margin: 0px!important;
 }
 }
 @media screen and (max-width: 768px) {
