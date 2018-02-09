@@ -23,7 +23,7 @@
                         <p><button class="btn btn-default" onclick="location.href={{ post.id }}" >Read More</button>
                         <button class="btn btn-default new" onclick="location.href='{% url 'new_post' %}'">New Post</button></p>
                         <div class="tags">
-                            <p>post.published_date }} | <strong>Views</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}</p>
+                            <p>{{ post.published_date }} | <strong>Views</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}</p>
                         </div>
                             
                     </div>
