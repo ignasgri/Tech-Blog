@@ -27,4 +27,8 @@ img.blogimages{
 }
 .post-title{
     font-size: 30px;
+    padding: 20px;
+}
+.tags{
+    margin-left: 30px;
 }
